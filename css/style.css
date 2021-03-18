@@ -28,7 +28,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 190px;
+	padding: 0 150px;
 }
 .header_title {
 	width: auto;
@@ -98,7 +98,7 @@
 .main_block {
 	width: 100%;
 	height: 772px;
-	padding: 0 190px;
+	padding: 0 150px;
 	display: flex;
 }
 .main_img {
@@ -166,7 +166,7 @@
 	color: #b69b66;
 	margin: 130px 0 0 40px;	
 }
-.main_subtitle_text {
+.main_subtitle-text {
 	height: 40px;
 	width: 600px;
 	font-family: 'Open Sans', sans-serif;
@@ -174,4 +174,96 @@
 	color: #b5b5b5;
 
 	margin: 35px 0 0 40px;
+}
+
+
+/* ABOUT WRITER */
+.aboutWriter{
+	width: 100%;
+	height: 755px;
+	padding: 60px 150px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 100%;
+	grid-gap: 36px;
+}
+.aboutWriter_textBlock{
+	padding: 39px 26px 0 26px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.aboutWriter_title{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.aboutWriter_title-text{
+	font-size: 36px;
+	color: #b69b66;
+	font-style: italic;
+	font-weight: unset;
+	margin-bottom: 20px;
+	font-family: "Playfair Display", serif;
+}
+.aboutWriter_title-text>span{
+	font-weight: bolder;
+}
+.aboutWriter_title-subtitle{
+	font-size: 20px;
+	color: #b5b5b5;
+	font-style: italic;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-family: "Playfair Display", serif;
+}
+.aboutWriter_text{
+	width: 100%;
+	height: auto;
+	margin-bottom: 35px;
+}
+.aboutWriter_text-text{
+	font-size: 24px;
+	color: #b5b5b5;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2;
+	font-family: 'Open Sans', sans-serif;
+}
+.aboutWriter_button{
+	width: 100%;
+	height: 47px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #b69b66;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: inherit;
+	background: none;
+	color: #b69b66;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.aboutWriter_button:hover{
+	background-color: #b69b66;
+	color: #303030;
+}
+
+
+
+
+.aboutWriter_img{
+	background-image: url(../img/pexels-photo-5703006.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
