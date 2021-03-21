@@ -105,15 +105,33 @@
 	width: 570px;
 	min-width: 570px;
 	height: 100%;
-	background-image: url(../img/hanna.jpg);
+	background-image: url(../img/main_photo.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+	position: relative;
+}
+.main_img-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.main_img-bg:nth-child(1){
+	background: linear-gradient(180deg, rgba(48,48,48,1) 0%, rgba(48,48,48,0) 90%);
+}
+.main_img-bg:nth-child(2){
+	background: linear-gradient(270deg, rgba(48,48,48,1) 0%, rgba(48,48,48,0) 90%);
+}
+.main_img-bg:nth-child(3){
+	background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(48,48,48,0) 90%);
+}
+.main_img-bg:nth-child(4){
+	background: linear-gradient(90deg, rgba(48,48,48,1) 0%, rgba(48,48,48,0) 90%);
 }
 .main_text {
 	width: auto;
 	height: 100%;
+	z-index: 2;
 }
 .main_title {
 	margin-top: 170px;
