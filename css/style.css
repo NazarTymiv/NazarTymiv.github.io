@@ -16,6 +16,8 @@
 	display: flex;
 	flex-direction: column;
 	background-color: #303030;
+	overflow: hidden;
+	position: relative;
 }
 .nav_ul > .active_link > a {
 	color: #b69b66;
@@ -272,6 +274,114 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+/* SLIDER */
+.sliderContainer{
+	width: 100%;
+	height: 645px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.slider{
+	width: 70%;
+	height: 400px;
+	overflow: hidden;
+}
+.slides{
+	width: 200%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 100%;
+	grid-gap: 10px;
+	transition: 1s;
+	top: 0;
+}
+.slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.arrow{
+	width: 40px;
+	height: 65px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	position: absolute;
+	margin-bottom: 100px;
+}
+.arrow_line{
+	width: 100%;
+	height: 3px;
+	background-color: #b5b5b5;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+.arrow:hover > .arrow_line{
+	background-color: #b69b66;
+}
+.arrow_line:nth-child(1){
+	transform: rotate(-45deg);
+	margin-top: 18px;
+}
+.arrow_line:nth-child(2){
+	transform: rotate(45deg);
+	margin-bottom: 17px;
+}
+.arrow_prev{
+	left: 100px;
+}
+.arrow_next{
+	right: 100px;
+	transform: rotate(180deg);
+}
+.slider_button{
+	width: 225px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #b69b66;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: inherit;
+    background: none;
+    color: #b69b66;
+    cursor: pointer;
+    transition: 0.3s;
+	margin-top: 70px;
+}
+.slider_button:hover{
+	background-color: #b69b66;
+	color: #303030;
+}
+.slide1{
+	background-image: url(../img/pexels-photo-5703006.jpeg);
+}
+.slide2{
+	background-image: url(../img/main_photo.png);
+}
+.slide3{
+	background-image: url(../img/pexels-photo-5703006.jpeg);
+}
+.slide4{
+	background-image: url(../img/main_photo.png);
+}
+.slide5{
+	background-image: url(../img/pexels-photo-5703006.jpeg);
+}
+.slide6{
+	background-image: url(../img/main_photo.png);
 }
 
 /* DATES */
