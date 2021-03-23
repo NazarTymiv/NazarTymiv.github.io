@@ -27,6 +27,14 @@ document.querySelectorAll('.arrow').forEach(item => {
         isHoverArrow = false;
     })
 })
+document.querySelectorAll('.slide').forEach(item => {
+    item.addEventListener('mouseover', () => {
+        isHoverArrow = true;
+    })
+    item.addEventListener('mouseout', () => {
+        isHoverArrow = false;
+    })
+})
 setInterval(() => {
     if(!isHoverArrow){
         countSlide == slide.length/2 ? countSlide = 0 : countSlide++;
