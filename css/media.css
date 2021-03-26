@@ -1,0 +1,119 @@
+/* MEDIA FOR MAIN PAGE */
+@media screen and (max-width: 1410px){
+    .header, .main_block, .aboutWriter, .footer{
+        padding: 0 100px;
+    }
+    .line1{
+        left: 750px;
+    }
+    .line2{
+        left: 1298px;
+    }
+    .line3{
+        left: 1141px;
+    }
+    .dates{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .header, .main_block, .aboutWriter, .footer{
+        padding: 0 50px;
+    }
+    .line1{
+        left: 650px;
+    }
+    .line2{
+        left: 1198px;
+    }
+    .line3{
+        left: 1041px;
+    }
+    .datesImg_main{
+        width: 600px;
+        min-width: 600px;
+    }
+    .main_subtitle-text{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .line1{
+        left: 550px;
+    }
+    .line2{
+        left: 1098px;
+    }
+    .line3{
+        left: 941px;
+    }
+    .datesImg_main{
+        width: 500px;
+        min-width: 500px;
+    }
+    .arrow_prev{
+        left: 50px;
+    }
+    .arrow_next{
+       right: 50px; 
+    }
+    .main_title{
+        margin-left: -150px;
+    }
+    .slider{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1100px){
+    .line1{
+        width: 500px;
+        left: 550px;
+    }
+    .line2{
+        left: 1048px;
+    }
+    .line3{
+        left: 891px;
+    }
+    .datesImg_main{
+        width: 450px;
+        min-width: 450px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .line1{
+        width: 400px;
+        left: 550px;
+    }
+    .line2{
+        left: 948px;
+    }
+    .line3{
+        left: 791px;
+    }
+    .datesImg_main{
+        width: 300px;
+        min-width: 300px;
+    }
+    .slider{
+        width: 85%;
+    }
+    .arrow_prev{
+        left: 25px;
+    }
+    .arrow_next{
+       right: 25px; 
+    }
+}
+
+
+
+
+
+/* MEDIA FOR Creativity of the writer */
+
+
+
+
+
+/* MEDIA FOR MAP */
