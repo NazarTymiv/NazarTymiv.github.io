@@ -62,6 +62,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.3s;
 }
 .nav_ul {
 	width: auto;
@@ -105,6 +106,27 @@
 .nav_li > a:hover::before {
 	width: 100%;
 }
+.nav_mobileBtn{
+	width: 22px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 5;
+	right: 50px;
+}
+.nav_mobileBtn-line{
+	width: 22px;
+    height: 1.5px;
+    background-color: #b5b5b5;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.nav_mobileBtn:hover > .nav_mobileBtn-line{
+    background-color: #9C8558;
+}
 
 /* MAIN BLOCK */
 .main_block {
@@ -136,6 +158,9 @@
 	width: auto;
 	height: 100%;
 	z-index: 2;
+}
+.main_textMobile{
+	display: none;
 }
 .main_title {
 	margin-top: 170px;
@@ -189,12 +214,10 @@
 	margin: 130px 0 0 40px;	
 }
 .main_subtitle-text {
-	height: 40px;
 	width: 600px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #b5b5b5;
-
 	margin: 35px 0 0 40px;
 }
 
@@ -435,6 +458,9 @@
 	background-image: url(../img/main_photo.png);
 }
 
+
+
+
 /* DATES */
 .dates_block {
 	width: 100%;
@@ -462,14 +488,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 50px 0 100px;
-}
-.date {
-	font-size: 16px;
-	line-height: 50px;
-	font-family: 'Open Sans', sans-serif;
-	color: #b5b5b5;
-
+	margin: 0 30px 0 50px;
+	padding-bottom: 100px;
 }
 .dates_title {
 	font-size: 36px;
@@ -481,6 +501,43 @@
 }
 .dates_title > span {
 	font-weight: normal;
+}
+.dates_subtitle{
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-family: "Playfair Display", serif;
+	color: #b5b5b5;
+	letter-spacing: 8px;
+}
+.dates_text{
+	color: #b5b5b5;
+	font-size: 16px;
+	font-weight: inherit;
+    font-family: 'Open Sans', sans-serif;
+	margin-bottom: 50px;
+}
+.dates_button{
+	width: 225px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #b69b66;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: inherit;
+    background: none;
+    color: #b69b66;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dates_button:hover{
+	background-color: #b69b66;
+	color: #303030;
 }
 
 /* FOOTER */

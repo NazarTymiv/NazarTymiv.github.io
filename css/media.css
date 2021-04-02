@@ -113,13 +113,11 @@
        right: 25px; 
     }
     .main_subtitle {
-        /* margin-top: 50px; */
-        margin-left: -10px;   
+        margin-left: -25px;   
     }
     .main_subtitle-text {
         width: 320px;
-        margin-left: -10px;
-        padding-right: -50px;
+        margin-left: -25px;
     }
     .aboutWriter {
         margin-top: 50px;
@@ -154,12 +152,11 @@
     }
     .main_subtitle {
         margin-top: 50px;
-        margin-left: -10px;   
+        margin-left: -50px;   
     }
     .main_subtitle-text {
-        width: 320px;
-        margin-left: -10px;
-        padding-right: -50px;
+        width: 285px;
+        margin-left: -50px;
     }
     .datesImg {
         display: none;
@@ -193,11 +190,11 @@
     }
     .main_subtitle {
         margin-top: 50px;
-        margin-left: -50px;   
+        margin-left: -100px;   
     }
     .main_subtitle-text {
-        margin-left: -50px;
-        width: 300px;
+        margin-left: -100px;
+        width: 280px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -229,12 +226,281 @@
         width: 100px;
         left: 550px;
     }
-    /* .slides {} */
+    .arrow_prev{
+        left: 7.5px;
+    }
+    .arrow_next{
+       right: 7.5px; 
+    }
+    .main_subtitle {
+        margin-top: 50px;
+        margin-left: -140px;   
+    }
+    .main_subtitle-text {
+        margin-left: -140px;
+        width: 280px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .slides {
+        width: 600%;
+    }
+    .slider{
+        width: 65%;
+        height: 450px;
+    }
+    .arrow_prev{
+        left: 25px;
+    }
+    .arrow_next{
+       right: 25px; 
+    }
+    .line, .main_title{
+        display: none;
+    }
+    .main_block{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0 50px;
+        height: 1100px;
+    }
+    .main_subtitle, .main_subtitle-text{
+        margin-left: 125px;
+    }
+    .main_subtitle-text{
+        width: auto
+    }
+    .main_text{
+        height: auto;
+    }
+    .main_img{
+        margin: 0;
+        transform: scale(1);
+        width: 400px;
+        min-width: 400px;
+        height: 535px;
+    }
+    .main_subtitle{
+        position: relative;
+    }
+    .main_subtitle::before{
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: #b5b5b5;
+        position: absolute;
+        top: 50%;
+        left: -75%;
+    }
+    .main_textMobile{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .main_titleMobile{
+        font-size: 4.5rem;
+        font-style: italic;
+        font-family: "Playfair Display", serif;
+        background: #9C8558;
+        font-weight: bold;
+        background: -webkit-linear-gradient(to bottom right, #9C8558 0%, #B09664 100%);
+        background: -moz-linear-gradient(to bottom right, #9C8558 0%, #B09664 100%);
+        background: linear-gradient(to bottom right, #9C8558 0%, #B09664 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: -50px;
+    }
+    .line_mobile{
+        background-color: #9C8558;
+        position: absolute
+    }
+    .line1_mobile{
+        width: 335px;
+        height: 3px;
+        top: 35px;
+        right: 0;
+    }
+    .line2_mobile{
+        width: 3px;
+        height: 280px;
+        top: 35px;
+        right: 0;
+    }
+    .line3_mobile{
+        width: 150px;
+        height: 3px;
+        bottom: 32px;
+        right: 0;
+    }
+    .nav_mobileBtn{
+        display: flex;
+    }
+    .nav{
+        display: none;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #303030;
+        margin-left: -25px;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        align-items: flex-start;
+    }
+    .nav_ul{
+        margin-top: 100px;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+
+    }
+    .nav_li{
+        margin-bottom: 30px;
+    }
+    .nav_li>a{
+        font-size: 18px;
+    }
+    .aboutWriter_img{
+        display: none;
+    }
+    .aboutWriter{
+        grid-template-columns: 100%;
+        height: 500px;
+    }
+    .dates{
+        padding-bottom: 0;
+    }
+    .dates_block{
+        height: 500px;
+    }
 }
 @media screen and (max-width: 500px) {
-    
+    .arrow_prev{
+        left: 20px;
+    }
+    .arrow_next{
+       right: 20px; 
+    }
+    .slider{
+        width: 70%;
+    }
+    .footer{
+        height: 150px;
+    }
+    .main_titleMobile{
+        font-size: 4rem;
+    }
+    .line1_mobile{
+        width: 300px;
+        height: 3px;
+        top: 35px;
+        right: 0;
+    }
+    .line2_mobile{
+        width: 3px;
+        height: 250px;
+        top: 35px;
+        right: 0;
+    }
+    .line3_mobile{
+        width: 150px;
+        height: 3px;
+        bottom: 62px;
+        right: 0;
+    }
+    .main_block{
+        padding: 0 25px;
+    }
 }
-
+@media screen and (max-width: 400px) {
+    .header, .main_block, .aboutWriter, .footer, .dates{
+        padding: 0 20px;
+    }
+    .nav_mobileBtn{
+        right: 15px;
+    }
+    .nav{
+        margin-left: 0;
+    }
+    .main_img{
+        width: 325px;
+        min-width: 325px;
+        height: 475px;
+    }
+    .aboutWriter_textBlock{
+        padding: 39px 10px 0 10px;
+    }
+    .dates{
+        margin: 0;
+    }
+    .socialMedia_links{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 7.5px;
+        justify-content: none;
+    }
+    .slider{
+        width: 75%;
+    }
+    .arrow_prev{
+        left: 5px;
+    }
+    .arrow_next{
+       right: 5px; 
+    }
+    .line1_mobile{
+        width: 250px;
+        height: 3px;
+        top: 50px;
+        right: 0;
+    }
+    .line2_mobile{
+        width: 3px;
+        height: 235px;
+        top: 50px;
+        right: 0;
+    }
+    .line3_mobile{
+        width: 150px;
+        height: 3px;
+        bottom: 62px;
+        right: 0;
+    }
+}
+@media screen and (max-width: 350px){
+    .main_img{
+        width: 290px;
+        min-width: 290px;
+        height: 420px;
+    }
+    .line2_mobile{
+        width: 3px;
+        height: 220px;
+        top: 50px;
+        right: 0;
+    }
+    .main_block{
+        height: 1000px;
+    }
+    .aboutWriter{
+        height: 600px;
+    }
+    .slider{
+        width: 85%;
+    }
+    .arrow{
+        z-index: 3;
+    }
+}
 
 
 
