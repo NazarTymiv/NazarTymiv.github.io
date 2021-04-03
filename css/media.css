@@ -511,3 +511,52 @@
 
 
 /* MEDIA FOR MAP */
+@media screen and (max-width: 1024px) {
+    .mapContent {
+        padding: 0 50px;
+        margin-top: 70px;
+        height: 100%;
+    }
+    .mapContent_title {
+        margin-bottom: 30px;
+    }
+    .mapContainer {
+        height: 700px;
+        overflow: scroll;
+    }
+    .footer {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mapContent_buttons {
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .mapContent_buttons-button {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .mapContent {
+        padding: 0 25px;
+        margin-top: 70px;
+    }
+    .mapContainer {
+        height: 400px;
+        margin-top: 25px;
+    }
+    .mapContent {
+        height: 700px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 25px;
+    }
+}
