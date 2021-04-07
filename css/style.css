@@ -173,12 +173,7 @@
 	line-height: 140px;
 	font-style: italic;
 	font-family: "Playfair Display", serif;
-	background: #9C8558;
-	background: -webkit-linear-gradient(to bottom right, #9C8558 0%, #B09664 100%);
-	background: -moz-linear-gradient(to bottom right, #9C8558 0%, #B09664 100%);
-	background: linear-gradient(to bottom right, #9C8558 0%, #B09664 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #9C8558;
 }
 .main_title  span:nth-child(1) {
 	font-weight: bold;
@@ -209,11 +204,11 @@
 }
 
 .main_subtitle-text {
-	width: 800px;
+	width: 700px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 	color: #b5b5b5;
-	margin: 100px 0 0 40px;
+	margin: 125px 0 0 40px;
 	text-indent: 40px;
 }
 
@@ -270,7 +265,7 @@
 	margin-bottom: 35px;
 }
 .aboutWriter_text-text{
-	font-size: 24px;
+	font-size: 20px;
 	color: #b5b5b5;
 	font-style: normal;
 	font-weight: 400;
@@ -322,18 +317,21 @@
 	height: 100%;
 	background-color: #303030;
 	border-radius: 5px;
+	position: relative;
 }
 .close_bio_button {
 	border: 0;
 	width: 25px;
 	height: 25px;
 	position: absolute;
-	right: 157px;
-	top: 57px;
+	right: 25px;
+	top: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: 0.5s;
+	background: transparent;
+	cursor: pointer;
 }
 .close_bio_btn_line {
 	width: 100%;
