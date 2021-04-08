@@ -814,3 +814,52 @@
 	opacity: 0;
 	transition: 0.3s;
 }
+.filters_choosenColumn-input {
+	margin-bottom: 5px;
+}
+.filters_choosenColumn-title {
+	margin-bottom: 10px;
+}
+.filters_choosenColumn-input > label {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+.filters_choosenColumn-input > label::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	border: 1px solid #b69b66;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+	transition: 0.3s;
+}
+
+.filters_choosenColumn-input > input {
+	display: none;
+}
+#year_1:checked ~ label::before,
+#year_2:checked ~ label::before,
+#year_3:checked ~ label::before,
+#year_4:checked ~ label::before,
+#year_5:checked ~ label::before,
+#year_6:checked ~ label::before,
+#year_7:checked ~ label::before,
+#year_8:checked ~ label::before,
+#year_9:checked ~ label::before,
+#year_10:checked ~ label::before,
+#year_11:checked ~ label::before,
+#year_12:checked ~ label::before,
+#year_13:checked ~ label::before,
+#year_14:checked ~ label::before,
+#year_15:checked ~ label::before,
+#year_16:checked ~ label::before,
+#year_17:checked ~ label::before,
+#year_18:checked ~ label::before,
+#year_19:checked ~ label::before,
+#year_20:checked ~ label::before{
+    background-color: #b69b66;
+}
