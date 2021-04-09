@@ -726,6 +726,8 @@
 	align-items: center;
 	justify-content: flex-end;
 	padding: 0 150px;
+	color: #b5b5b5;
+    font-family: 'Open Sans', sans-serif;
 }
 .art_filtersBlock{
 	width: 100%;
@@ -862,4 +864,21 @@
 #year_19:checked ~ label::before,
 #year_20:checked ~ label::before{
     background-color: #b69b66;
+}
+
+/* ART GALETY */
+.art_galery {
+	width: 100%;
+	height: auto;
+	padding: 40px 150px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 500px);
+	/* grid-template-rows: auto; */
+	grid-gap: 45px;
+	
+}
+.art {
+	border: 1px solid #b69b66;
+	/* border-radius: 5px; */
 }
