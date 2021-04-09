@@ -30,7 +30,8 @@ arrow_next.addEventListener('click', () => {
     scrollSlider();
 })
 const scrollSlider = () => {
-    let Step = slide[0].offsetWidth + 10;
+    let Step =0;
+    body.offsetWidth > 600 ? Step = slide[0].offsetWidth + 10 : Step = slide[0].offsetWidth + 9;
     slides.style.marginLeft = `${-(Step * countSlide)}px`;
 }
 document.querySelectorAll('.arrow').forEach(item => {

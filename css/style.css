@@ -204,7 +204,7 @@
 }
 
 .main_subtitle-text {
-	width: 700px;
+	width: 600px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	color: #b5b5b5;
@@ -864,6 +864,10 @@
 #year_19:checked ~ label::before,
 #year_20:checked ~ label::before{
     background-color: #b69b66;
+	background-image: url(../img/mark.png);
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
 }
 
 /* ART GALETY */
