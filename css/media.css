@@ -406,6 +406,7 @@
     }
     .main_block{
         padding: 0 25px;
+        height: 1250px;
     }
 }
 @media screen and (max-width: 400px) {
