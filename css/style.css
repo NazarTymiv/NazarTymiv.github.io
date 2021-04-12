@@ -633,7 +633,7 @@
 
 .mapContent{
 	width: 100%;
-	height: 732px;
+	height: auto;
 	padding: 0 150px;
 }
 .mapContent_title{
@@ -654,7 +654,7 @@
 /* MAP */
 .mapContainer{
 	width: 100%;
-	height: 500px;
+	height: 90vh;
 	overflow: hidden;
 }
 .mapContainer::-webkit-scrollbar{

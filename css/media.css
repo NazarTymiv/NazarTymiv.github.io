@@ -506,13 +506,11 @@
     .mapContent {
         padding: 0 50px;
         margin-top: 70px;
-        height: 100%;
     }
     .mapContent_title {
         margin-bottom: 30px;
     }
     .mapContainer {
-        height: 700px;
         overflow: scroll;
     }
     .footer {
@@ -538,11 +536,7 @@
         margin-top: 70px;
     }
     .mapContainer {
-        height: 400px;
         margin-top: 25px;
-    }
-    .mapContent {
-        height: 700px;
     }
     .footer {
         display: flex;
