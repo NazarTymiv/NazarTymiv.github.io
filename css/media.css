@@ -70,9 +70,6 @@
     .slider{
         width: 80%;
     }
-    .bio_page{
-        padding: 50px 100px;
-    }
 }
 @media screen and (max-width: 1100px){
     .line1{
@@ -129,9 +126,6 @@
     }
     .main_title{
         font-size: 110px;
-    }
-    .bio_page{
-        padding: 50px 75px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -209,9 +203,6 @@
     }
     .dates{
         padding-bottom: 0;
-    }
-    .bio_page{
-        padding: 35px 50px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -478,8 +469,8 @@
     .main_subtitle-text{
         margin: 0;
     }
-    .bio_page{
-        padding: 35px 35px;
+    .bio_page_content{
+        height: 95%;
     }
 }
 @media screen and (max-width: 350px){
@@ -502,9 +493,6 @@
     }
     .line1_mobile, .line2_mobile, .line3_mobile{
         right: -10px;
-    }
-    .bio_page{
-        padding: 20px 15px;
     }
 }
 

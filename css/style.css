@@ -307,14 +307,15 @@
 	left: 0;
 	z-index: 5;
 	display: none;
+	align-items: center;
+	justify-content: center;
 	opacity: 0;
-	padding: 50px 150px;
 	background-color: rgba(0, 0, 0, 0.85);
 	transition: 0.3s;
 }
 .bio_page_content {
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 	background-color: #303030;
 	border-radius: 5px;
 	position: relative;
