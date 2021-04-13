@@ -469,9 +469,6 @@
     .main_subtitle-text{
         margin: 0;
     }
-    .bio_page_content{
-        height: 95%;
-    }
 }
 @media screen and (max-width: 350px){
     .header, .main_block, .aboutWriter, .footer, .dates{
