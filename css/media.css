@@ -3,6 +3,9 @@
     .header, .main_block, .aboutWriter, .footer{
         padding: 0 100px;
     }
+    .aboutWriter_more{
+        padding: 50px 100px;
+    }
     .line1{
         left: 750px;
     }
@@ -23,6 +26,13 @@
 @media screen and (max-width: 1300px){
     .header, .main_block, .aboutWriter, .footer{
         padding: 0 50px;
+    }
+    .aboutWriter_more{
+        padding: 75px 50px;
+    }
+    .aboutWriter_moreClose-btn{
+        top: 25px;
+        right: 25px;
     }
     .line1{
         left: 650px;
@@ -95,6 +105,9 @@
 @media screen and (max-width: 1024px){
     .header, .main_block, .aboutWriter, .footer{
         padding: 0 25px;
+    }
+    .aboutWriter_more{
+        padding: 25px 25px;
     }
     .line1{
         width: 425px;
@@ -243,6 +256,23 @@
     .main_subtitle-text {
         margin-left: -140px;
         width: 280px;
+    }
+    .aboutWriter_moreBlock{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .aboutWriter_moreBlock-img{
+        margin-right: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .aboutWriter_moreTextBlock{
+        width: 100%;
+        display: none;
+    }
+    .aboutWriter_moreTextBlock-mobile{
+        display: flex;
     }
 }
 @media screen and (max-width: 600px) {
@@ -413,6 +443,9 @@
     .header, .main_block, .aboutWriter, .footer, .dates{
         padding: 0 20px;
     }
+    .aboutWriter_more{
+        padding: 25px 20px;
+    }
     .nav_mobileBtn{
         right: 15px;
     }
@@ -473,6 +506,9 @@
 @media screen and (max-width: 350px){
     .header, .main_block, .aboutWriter, .footer, .dates{
         padding: 0 10px;
+    }
+    .aboutWriter_more{
+        padding: 25px 10px;
     }
     .main_img{
         width: 290px;
