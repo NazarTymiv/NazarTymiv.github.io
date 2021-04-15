@@ -44,7 +44,7 @@ filters_choosenColumnCheckbox.forEach(item => {
             item.style.opacity = "0";
             setTimeout(() => {
                 item.style.display = "none";
-            }, 250)
+            }, 300)
         })
         setTimeout(() => {
             filters_choosenColumnCheckbox.forEach(item => {
@@ -54,7 +54,7 @@ filters_choosenColumnCheckbox.forEach(item => {
                             block.style.display = "block";
                             setTimeout(() => {
                                 block.style.opacity = "1";
-                            }, 250)
+                            }, 300)
                         }
                     })
                     count++;
@@ -65,9 +65,33 @@ filters_choosenColumnCheckbox.forEach(item => {
                     block.style.display = "block";
                     setTimeout(() => {
                         block.style.opacity = "1";
-                    }, 250)
+                    }, 300)
                 })
             }
-        }, 250)
+        }, 300)
     })
+})
+
+
+// SHOW OUTPUT BLOCK
+let art_button = document.querySelectorAll('.art_button'),
+    art_outputBlock = document.querySelector('.art_outputBlock'),
+    html = document.querySelector('html'),
+    art_outputBlock_CloseBtn = document.querySelector('.art_outputBlock_Close-btn');
+
+art_button.forEach(item => {
+    item.addEventListener('click', () => {
+        html.style.overflow = 'hidden';
+        art_outputBlock.style.display = 'flex';
+        setTimeout(() => {
+            art_outputBlock.style.opacity = '1';
+        }, 150)
+    })
+})
+art_outputBlock_CloseBtn.addEventListener('click', () => {
+    art_outputBlock.style.opacity = '0';
+    setTimeout(() => {
+        html.style.overflow = 'auto';
+        art_outputBlock.style.display = 'none';
+    }, 150)
 })
