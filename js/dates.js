@@ -1,13 +1,17 @@
 let dates_timelineItem = document.querySelectorAll('.dates_timeline-item'),
     dates_resultBlock = document.querySelectorAll('.dates_resultBlock'),
-    indexOfBlock = 0;
+    indexOfBlock = 0,
+    isClick = false;
 
 dates_timelineItem.forEach(item => {
     item.addEventListener('click', () => {
-        document.querySelector('.dates_timeline-itemActive').classList.remove('dates_timeline-itemActive');
-        if (item.classList != 'dates_timeline-itemActive') {
-            item.classList.add('dates_timeline-itemActive');
-            showResultDate(item.getAttribute('number'));
+        if(!isClick){
+            isClick = true;
+            document.querySelector('.dates_timeline-itemActive').classList.remove('dates_timeline-itemActive');
+            if (item.classList != 'dates_timeline-itemActive') {
+                item.classList.add('dates_timeline-itemActive');
+                showResultDate(item.getAttribute('number'));
+            }
         }
     })
 })
@@ -20,6 +24,7 @@ const showResultDate = (index) => {
         setTimeout(() => {
             dates_resultBlock[index].style.opacity = '1';
             indexOfBlock = index;
+            isClick = false;
         }, 300)
     }, 300)
 }
