@@ -28,6 +28,46 @@ button.addEventListener('click', () => {
         setTimeout(() => {
             content_choosen.style.display = 'none';
         }, 150)
-        
+
     }
+})
+
+
+// FILTERS
+let filters_choosenColumnCheckbox = document.querySelectorAll('.filters_choosenColumn-checkbox'),
+    content_cart = document.querySelectorAll('.art');
+
+filters_choosenColumnCheckbox.forEach(item => {
+    item.addEventListener('click', () => {
+        let count = 0;
+        content_cart.forEach(item => {
+            item.style.opacity = "0";
+            setTimeout(() => {
+                item.style.display = "none";
+            }, 250)
+        })
+        setTimeout(() => {
+            filters_choosenColumnCheckbox.forEach(item => {
+                if (item.checked) {
+                    content_cart.forEach(block => {
+                        if (item.id == block.getAttribute("year") || item.id == block.getAttribute("genre") || item.id == block.getAttribute("language") || item.id == block.getAttribute("pages")) {
+                            block.style.display = "block";
+                            setTimeout(() => {
+                                block.style.opacity = "1";
+                            }, 250)
+                        }
+                    })
+                    count++;
+                }
+            })
+            if (count <= 0) {
+                content_cart.forEach(block => {
+                    block.style.display = "block";
+                    setTimeout(() => {
+                        block.style.opacity = "1";
+                    }, 250)
+                })
+            }
+        }, 250)
+    })
 })

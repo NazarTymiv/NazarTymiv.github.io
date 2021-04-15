@@ -870,8 +870,8 @@
 .filters_choosenColumn-input > input {
 	display: none;
 }
-#year_1:checked ~ label::before,
-#year_2:checked ~ label::before,
+#year2010:checked ~ label::before,
+#year1935:checked ~ label::before,
 #year_3:checked ~ label::before,
 #year_4:checked ~ label::before,
 #year_5:checked ~ label::before,
@@ -915,6 +915,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.3s;
 }
 .artBG_container{
 	width: 100%;
