@@ -875,21 +875,18 @@
 #year_3:checked ~ label::before,
 #year_4:checked ~ label::before,
 #year_5:checked ~ label::before,
-#year_6:checked ~ label::before,
-#year_7:checked ~ label::before,
-#year_8:checked ~ label::before,
-#year_9:checked ~ label::before,
-#year_10:checked ~ label::before,
-#year_11:checked ~ label::before,
-#year_12:checked ~ label::before,
-#year_13:checked ~ label::before,
-#year_14:checked ~ label::before,
-#year_15:checked ~ label::before,
-#year_16:checked ~ label::before,
-#year_17:checked ~ label::before,
-#year_18:checked ~ label::before,
-#year_19:checked ~ label::before,
-#year_20:checked ~ label::before{
+#catharsis:checked ~ label::before,
+#modernism:checked ~ label::before,
+#novel:checked ~ label::before,
+#romance:checked ~ label::before,
+#ukrainian:checked ~ label::before,
+#russian:checked ~ label::before,
+#polish:checked ~ label::before,
+#pages100:checked ~ label::before,
+#pages200:checked ~ label::before,
+#pages300:checked ~ label::before,
+#pages400:checked ~ label::before,
+#pages500:checked ~ label::before{
     background-color: #b69b66;
 	background-image: url(../img/mark.png);
 	background-position: center;
@@ -909,9 +906,47 @@
 	grid-gap: 45px;
 }
 .art {
-	border: 1px solid #b69b66;
-	/* border-radius: 5px; */
+	background-image: url(../img/test_book.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+.artBG_container{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	opacity: 0;
+	transition: 0.5s;
+}
+.art:hover > .artBG_container{
+	opacity: 1;
+}
+.artBG_container>p:not(.art_title){
+	color: #b5b5b5;
+	font-size: 20px;
+	text-align: center;
+    font-family: 'Open Sans', sans-serif;
+	margin-bottom: 5px;
+}
+.art_title{
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	color: #b69b66;
+	text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 
 

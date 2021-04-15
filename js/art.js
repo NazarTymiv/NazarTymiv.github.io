@@ -4,6 +4,7 @@ let button = document.querySelector('.art_filtersSpoiler-arrowBlock'),
     arrow = document.querySelector('.art_filtersSpoiler-arrow'),
     isActive = false;
 
+
 button.addEventListener('click', () => {
     if (!isActive) {
         arrow.style.transform = 'scale(-1)';
