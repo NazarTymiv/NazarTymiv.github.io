@@ -1,5 +1,5 @@
 // NAVIGATION
-let container = document.querySelector('.container'),
+let html = document.querySelector('html'),
     nav_mobileBtnLine = document.querySelectorAll('.nav_mobileBtn-line'),
     nav_mobileBtn = document.querySelector('.nav_mobileBtn'),
     nav = document.querySelector('.nav'),
@@ -15,13 +15,13 @@ nav_mobileBtn.addEventListener('click', () => {
             isActionNav = true;
             nav_mobileBtnLine[0].style.transform = "translateY(10px) translateY(-50%) rotate(-45deg)";
             nav_mobileBtnLine[2].style.transform = "translateY(-10px) translateY(50%) rotate(45deg)";
-            container.style.height = "100vh";
+            html.style.overflow = "hidden";
         }, 100)
     } else {
         nav.style.opacity = "0";
         nav_mobileBtnLine[0].style.transform = "none";
         nav_mobileBtnLine[2].style.transform = "none";
-        container.style.height = "auto";
+        html.style.overflow = "auto";
         setTimeout(() => {
             nav.style.display = "none";
             isActionNav = false;
@@ -35,7 +35,7 @@ links.forEach(item => {
             nav.style.opacity = "0";
             nav_mobileBtnLine[0].style.transform = "none";
             nav_mobileBtnLine[2].style.transform = "none";
-            container.style.height = "auto";
+            html.style.overflow = "auto";
             setTimeout(() => {
                 nav.style.display = "none";
                 isActionNav = false;

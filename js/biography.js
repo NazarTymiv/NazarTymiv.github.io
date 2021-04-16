@@ -1,6 +1,5 @@
 // BIOGRAPHY BLOCK
 let aboutWriter_more = document.querySelector('.aboutWriter_more'),
-    html = document.querySelector('html'),
     aboutWriter_button = document.querySelector('.aboutWriter_button'),
     aboutWriter_moreCloseBtn = document.querySelector('.aboutWriter_moreClose-btn');
 
