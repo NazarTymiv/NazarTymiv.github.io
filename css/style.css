@@ -1200,19 +1200,20 @@
 	background-color: #b69b66;
 }
 .dates_opentimelineBtn{
-	width: 35px;
-	height: 75px;
-	border-radius: 0 25px 25px 0;
-	background-color: #303030;
+	width: 30px;
+	height: 60px;
+	background: #303030;
+	border-radius: 3px;
 	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
 	position: fixed;
-	left: 0;
+	left: -5px;
 	top: 45%;
 	z-index: 7;
 	display: none;
 	align-items: center;
 	justify-content: center;
 	transition: 0.5s;
+	padding-left: 5px;
 }
 .dates_opentimelineBtn>p{
 	color: #b5b5b5;
