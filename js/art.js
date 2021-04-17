@@ -76,7 +76,6 @@ filters_choosenColumnCheckbox.forEach(item => {
 // SHOW OUTPUT BLOCK
 let art_button = document.querySelectorAll('.art_button'),
     art_outputBlock = document.querySelector('.art_outputBlock'),
-    html = document.querySelector('html'),
     art_outputBlock_CloseBtn = document.querySelector('.art_outputBlock_Close-btn');
 
 art_button.forEach(item => {

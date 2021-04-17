@@ -10,6 +10,7 @@ nav_mobileBtn.addEventListener('click', () => {
     if (!isActionNav) {
         nav.style.display = 'flex';
         nav_mobileBtnLine[1].style.opacity = '0';
+        nav_mobileBtn.style.position = 'fixed';
         setTimeout(() => {
             nav.style.opacity = "1";
             isActionNav = true;
@@ -22,6 +23,7 @@ nav_mobileBtn.addEventListener('click', () => {
         nav_mobileBtnLine[0].style.transform = "none";
         nav_mobileBtnLine[2].style.transform = "none";
         html.style.overflow = "auto";
+        nav_mobileBtn.style.position = 'absolute';
         setTimeout(() => {
             nav.style.display = "none";
             isActionNav = false;

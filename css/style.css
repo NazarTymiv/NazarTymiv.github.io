@@ -118,8 +118,9 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    z-index: 5;
+    z-index: 11;
 	right: 50px;
+	transition: 0.3s;
 }
 .nav_mobileBtn-line{
 	width: 22px;
@@ -1030,7 +1031,7 @@
 
 
 
-/* SRTLES FOR DATES PAGE */
+/* STYLES FOR DATES PAGE */
 .dates_content{
 	width: 100%;
 	height: 100vh;
@@ -1149,4 +1150,105 @@
 }
 .dates_timeline-itemActive > .dates_timeline-line{
 	height: 4px;
+}
+
+
+
+/* TIMELINE FOR MOBILE */
+.dates_timelineBlockMbl{
+	width: 30%;
+	height: 100vh;
+	position: fixed;
+	background-color: #303030;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	box-shadow: 5px 0px 15px -5px rgba(0, 0, 0, 0.5);
+	margin-left: -57%;
+	transition: 0.75s;
+	overflow: hidden;
+	padding: 75px 25px 25px 25px;
+}
+.dates_mobileBtn{
+	width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 25px;
+	top: 25px;
+}
+.dates_mobileBtn-line{
+	width: 100%;
+    height: 1.5px;
+    background-color: #b5b5b5;
+    transition: 0.3s;
+	position: absolute;
+}
+.dates_mobileBtn-lineOne{
+	transform: rotate(45deg);
+}
+.dates_mobileBtn-lineTwo{
+	transform: rotate(-45deg);
+}
+.dates_mobileBtn:hover > .dates_mobileBtn-line{
+	background-color: #b69b66;
+}
+.dates_opentimelineBtn{
+	width: 35px;
+	height: 75px;
+	border-radius: 0 25px 25px 0;
+	background-color: #303030;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+	position: fixed;
+	left: 0;
+	top: 45%;
+	z-index: 7;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.dates_opentimelineBtn>p{
+	color: #b5b5b5;
+	transform: scaleY(2);
+	transition: 0.3s;
+}
+.dates_opentimelineBtn:hover>p{
+	color: #b69b66;
+}
+.dates_timelineBlockMblBlock{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.dates_timelineBlockMblBlock-item{
+    font-size: 16px;
+    font-weight: 700;
+    color: #b5b5b5;
+    font-family: 'Open Sans', sans-serif;
+	margin-bottom: 25px;
+	transition: 0.3s;
+}
+.dates_timelineBlockMblBlock-itemActive{
+	color: #b69b66;
+	margin-left: 50px;
+	position: relative;
+}
+.dates_timelineBlockMblBlock-itemActive::before{
+	content: "";
+	width: 40px;
+	height: 1.5px;
+	background-color: #b69b66;
+	position: absolute;
+	top: 50%;
+	left: -140%;
 }
