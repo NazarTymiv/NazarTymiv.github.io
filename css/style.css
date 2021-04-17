@@ -925,7 +925,9 @@
 	transition: 0.3s;
 	display: flex;
 	flex-direction: column;
-	padding: 180px 0 25px 25px;
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding: 0 0 25px 25px;
 	opacity: 0;
 	transition: 0.5s;
 	border-radius: 3px;
