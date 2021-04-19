@@ -1,4 +1,3 @@
-@@ -0,0 +1,22 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 const routes = require('./routes/routes')
