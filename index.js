@@ -19,4 +19,4 @@ app.set('views', 'views')
 
 app.listen(PORT, () => {
     console.log('Server started succesfully')
-})
+}) 

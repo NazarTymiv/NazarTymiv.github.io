@@ -386,6 +386,7 @@
     }
     .nav_li{
         margin-bottom: 30px;
+        margin-left: 0;
     }
     .nav_li>a{
         font-size: 18px;
