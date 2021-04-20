@@ -681,11 +681,19 @@
     .filters_choosenColumn{
         margin-left: 30px;
     }
-}
-@media screen and (max-width: 400px){
     .art_galery {
         grid-template-columns: repeat(1, 1fr);
     }
+    .art_title{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .artBG_container>p:not(.art_title){
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 400px){
     .filters_choosenColumn {
         margin-left: 0;
         justify-content: center;
@@ -696,14 +704,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-    }
-    .art_title{
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-    .artBG_container>p:not(.art_title){
-        font-size: 18px;
-        margin-bottom: 10px;
     }
     .art_filtersBlockMb-title{
         font-size: 35px;
