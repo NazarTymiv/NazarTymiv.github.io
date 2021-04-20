@@ -38,7 +38,7 @@ const fadeInMap = () => {
     maps[numberOfMap].style.display = 'flex';
     setTimeout(() => {
         maps[numberOfMap].style.opacity = '1';
-    }, 300)
+    }, 500)
 }
 mapContent_buttonsButton.forEach(item => {
     item.addEventListener('click', () => {
@@ -49,7 +49,7 @@ mapContent_buttonsButton.forEach(item => {
             maps[numberOfMap].style.display = 'none';
             numberOfMap = item.getAttribute('number');
             fadeInMap();
-        }, 300)
+        }, 500)
     })
 })
 fadeInMap();

@@ -140,5 +140,5 @@ const closeFilterBlockMbl = () => {
     setTimeout(() => {
         art_filtersBlockMb.style.display = 'none';
         html.style.overflow = 'auto';
-    }, 150)
+    }, 500)
 }
