@@ -870,23 +870,7 @@
 .filters_choosenColumn-input > input {
 	display: none;
 }
-#year2010:checked ~ label::before,
-#year1935:checked ~ label::before,
-#year_3:checked ~ label::before,
-#year_4:checked ~ label::before,
-#year_5:checked ~ label::before,
-#catharsis:checked ~ label::before,
-#modernism:checked ~ label::before,
-#novel:checked ~ label::before,
-#romance:checked ~ label::before,
-#ukrainian:checked ~ label::before,
-#russian:checked ~ label::before,
-#polish:checked ~ label::before,
-#pages100:checked ~ label::before,
-#pages200:checked ~ label::before,
-#pages300:checked ~ label::before,
-#pages400:checked ~ label::before,
-#pages500:checked ~ label::before{
+input:checked ~ label::before{
     background-color: #b69b66;
 	background-image: url(../img/mark.png);
 	background-position: center;
@@ -901,8 +885,7 @@
 	padding: 40px 150px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 500px);
-	/* grid-template-rows: auto; */
+	grid-template-rows: auto;
 	grid-gap: 45px;
 }
 .art {
@@ -1024,7 +1007,75 @@
 .art_outputBlock_Close-btn:hover > .art_outputBlock_Close-line{
 	background-color: #b69b66;
 }
-
+.art_filtersBtnMb{
+	width: 150px;
+    height: 45px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 2px solid #b69b66;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: inherit;
+    color: #b69b66;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.art_filtersBtnMb:hover{
+	background-color: #b69b66;
+	color: #303030;
+}
+.art_filtersBlockMb{
+	width: 100%;
+    height: 100vh;
+    background-color: rgba(48, 48, 48, 0.97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    overflow: auto;
+    padding: 50px 25px;
+	display: none;
+	opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s;
+}
+.art_filtersBlockMb-closeBtn{
+	width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    cursor: pointer;
+    top: 50px;
+    right: 50px;
+    transition: 0.3s;
+    background-color: rgba(38, 38, 38, 1);
+}
+.art_filtersBlockMb-closeline{
+	width: 75%;
+    height: 1.5px;
+    background-color: #b5b5b5;
+    position: absolute;
+    transition: 0.3s;
+}
+.art_filtersBlockMb-closeline:nth-child(1){
+	transform: rotate(45deg);
+}
+.art_filtersBlockMb-closeline:nth-child(2){
+	transform: rotate(-45deg);
+}
+.art_filtersBlockMb-title{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #b69b66;
+	margin-bottom: 50px;
+}
 
 
 

@@ -2,6 +2,7 @@ let button = document.querySelector('.art_filtersSpoiler-arrowBlock'),
     content = document.querySelector('.art_filtersContent'),
     content_choosen = document.querySelector('.filters_choosen'),
     arrow = document.querySelector('.art_filtersSpoiler-arrow'),
+    body = document.querySelector('body'),
     isActive = false;
 
 
@@ -50,7 +51,7 @@ filters_choosenColumnCheckbox.forEach(item => {
             filters_choosenColumnCheckbox.forEach(item => {
                 if (item.checked) {
                     content_cart.forEach(block => {
-                        if (item.id == block.getAttribute("year") || item.id == block.getAttribute("genre") || item.id == block.getAttribute("language") || item.id == block.getAttribute("pages")) {
+                        if (item.id == block.getAttribute("year") || item.id == block.getAttribute("genre") || item.id == block.getAttribute("language") || item.id == block.getAttribute("pages") || item.id.slice(0, -3) == block.getAttribute("year") || item.id.slice(0, -3) == block.getAttribute("genre") || item.id.slice(0, -3) == block.getAttribute("language") || item.id.slice(0, -3) == block.getAttribute("pages")) {
                             block.style.display = "block";
                             setTimeout(() => {
                                 block.style.opacity = "1";
@@ -69,6 +70,11 @@ filters_choosenColumnCheckbox.forEach(item => {
                 })
             }
         }, 300)
+        if(body.offsetWidth <= 600){
+            setTimeout(() => {
+                closeFilterBlockMbl();
+            }, 300)
+        }
     })
 })
 
@@ -94,3 +100,45 @@ art_outputBlock_CloseBtn.addEventListener('click', () => {
         art_outputBlock.style.display = 'none';
     }, 150)
 })
+
+
+// RESIZE BOOK FUNCTION
+
+let artGallery = document.querySelector('.art_galery'),
+    art = document.querySelectorAll('.art')[0],
+    w = art.offsetWidth;
+
+const resizeBook = () => {
+    artGallery.style.gridTemplateRows = `repeat(4, ${w + 175}px)`;
+}
+
+resizeBook();
+
+
+// OPEN FILTER FOR PHONE
+let art_filtersBtnMb = document.querySelector('.art_filtersBtnMb'),
+    art_filtersBlockMbCloseBtn = document.querySelector('.art_filtersBlockMb-closeBtn'),
+    art_filtersBlockMb = document.querySelector('.art_filtersBlockMb');
+
+art_filtersBtnMb.addEventListener('click', () => {
+    openFilterBlockMbl();
+})
+art_filtersBlockMbCloseBtn.addEventListener('click', () => {
+    closeFilterBlockMbl();
+})
+
+const openFilterBlockMbl = () => {
+    art_filtersBlockMb.style.display = 'flex';
+    html.style.overflow = 'hidden';
+    setTimeout(() => {
+        art_filtersBlockMb.style.opacity = '1';
+    }, 150)
+}
+
+const closeFilterBlockMbl = () => {
+    art_filtersBlockMb.style.opacity = '0';
+    setTimeout(() => {
+        art_filtersBlockMb.style.display = 'none';
+        html.style.overflow = 'auto';
+    }, 150)
+}
