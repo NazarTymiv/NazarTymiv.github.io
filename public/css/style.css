@@ -980,8 +980,7 @@ input:checked ~ label::before{
     padding: 50px 150px;
     display: none;
     opacity: 0;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     transition: 0.3s;
 }
@@ -1014,6 +1013,109 @@ input:checked ~ label::before{
 .art_outputBlock_Close-btn:hover > .art_outputBlock_Close-line{
 	background-color: #b69b66;
 }
+.art_outputBlock-img{
+	width: 270px;
+	height: 445px;
+	background-image: url(https://cdn.discordapp.com/attachments/648552378139934720/834691512305844254/IMG_20210422_102549_242.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.art_outputBlockContent{
+	width: 70%;
+	height: auto;
+	margin-left: 50px;
+}
+.art_outputBlockContent-description{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+.art_outputBlockContent-title{
+	font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #B69B66;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+.art_outputBlockContent-description>p {
+    color: #b5b5b5;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.art_outputBlockContent-description>p>span {
+    font-weight: 600;
+}
+.art_outputBlockContent-writings{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.art_outputBlockContent-writingsTitle{
+	font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #B69B66;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.art_outputBlockContent-writingsLi{
+	list-style: inside;
+	margin-left: 10px;
+	color: #b5b5b5;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.art_outputBlockContent-button{
+	width: 97px;
+    height: 37px;
+    border: 2px solid #B69B66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #B69B66;
+	cursor: pointer;
+}
+.art_outputBlockContent-button:hover{
+	color: #303030;
+	background-color: #B69B66;
+}
+
+
+
+
+
+
+
+
+
 .art_filtersBtnMb{
 	width: 150px;
     height: 45px;
