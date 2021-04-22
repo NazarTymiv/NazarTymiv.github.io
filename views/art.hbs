@@ -36,24 +36,24 @@
                     </div>
                     <div class="filters_choosenColumn-content">
                         <div class="filters_choosenColumn-input">
+                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year2016">
+                            <label for="year2016">2016 р.</label>
+                        </div>
+                        <div class="filters_choosenColumn-input">
                             <input type="checkbox" class="filters_choosenColumn-checkbox" id="year2010">
                             <label for="year2010">2010 р.</label>
                         </div>
                         <div class="filters_choosenColumn-input">
-                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year1935">
-                            <label for="year1935">1935 р.</label>
+                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year1989">
+                            <label for="year1989">1989 р.</label>
                         </div>
                         <div class="filters_choosenColumn-input">
-                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year_3">
-                            <label for="year_3">1935 р.</label>
+                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year1985">
+                            <label for="year1985">1985 р.</label>
                         </div>
                         <div class="filters_choosenColumn-input">
-                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year_4">
-                            <label for="year_4">1935 р.</label>
-                        </div>
-                        <div class="filters_choosenColumn-input">
-                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year_5">
-                            <label for="year_5">1935 р.</label>
+                            <input type="checkbox" class="filters_choosenColumn-checkbox" id="year1973">
+                            <label for="year1973">1973 р.</label>
                         </div>
                     </div>
                 </div>
@@ -145,8 +145,8 @@
                 </div>
                 <div class="filters_choosenColumn-content">
                     <div class="filters_choosenColumn-input">
-                        <input type="checkbox" class="filters_choosenColumn-checkbox" id="year2010Mbl">
-                        <label for="year2010Mbl">2010 р.</label>
+                        <input type="checkbox" class="filters_choosenColumn-checkbox" id="year2016Mbl">
+                        <label for="year2016Mbl">2016 р.</label>
                     </div>
                     <div class="filters_choosenColumn-input">
                         <input type="checkbox" class="filters_choosenColumn-checkbox" id="year1935Mbl">
@@ -241,7 +241,7 @@
 
 <div class="art_galery">
     {{#each books}}
-    <div class="art" year={{fYear}} genre={{fGenre}} language={{fLanguage}} pages={{fPages}}>
+    <div class="art" style="background-image: url({{linkPhoto}});" year={{fYear}} genre={{fGenre}} language={{fLanguage}} pages={{fPages}}>
         <div class="artBG_container">
             <p class="art_title">{{title}}</p>
             <p class="art_year"><span>{{year}}</span></p>

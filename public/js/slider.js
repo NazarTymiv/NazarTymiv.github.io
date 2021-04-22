@@ -2,7 +2,7 @@
 let slides = document.querySelector('.slides'),
     slide = document.querySelectorAll('.slide'),
     body = document.getElementsByTagName('body')[0]
-arrow_prev = document.querySelector('.arrow_prev'),
+    arrow_prev = document.querySelector('.arrow_prev'),
     arrow_next = document.querySelector('.arrow_next'),
     countSlide = 0,
     isHoverArrow = false;
@@ -63,3 +63,14 @@ setInterval(() => {
         scrollSlider();
     }
 }, 5000);
+
+// RESIZE BOOK FUNCTION FOR SLIDER
+
+let slider = document.querySelector('.slider'),
+    w = slide[0].offsetWidth;
+
+const resizeBook = () => {
+    slider.style.height = `${w + 175}px`;
+}
+
+resizeBook();
