@@ -63,14 +63,3 @@ setInterval(() => {
         scrollSlider();
     }
 }, 5000);
-
-// RESIZE BOOK FUNCTION FOR SLIDER
-
-let slider = document.querySelector('.slider'),
-    w = slide[0].offsetWidth;
-
-const resizeBook = () => {
-    slider.style.height = `${w + 175}px`;
-}
-
-resizeBook();

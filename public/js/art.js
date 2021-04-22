@@ -70,7 +70,7 @@ filters_choosenColumnCheckbox.forEach(item => {
                 })
             }
         }, 300)
-        if(body.offsetWidth <= 600){
+        if (body.offsetWidth <= 600) {
             setTimeout(() => {
                 closeFilterBlockMbl();
             }, 300)
@@ -109,10 +109,12 @@ let artGallery = document.querySelector('.art_galery'),
     w = art.offsetWidth;
 
 const resizeBook = () => {
-    artGallery.style.gridTemplateRows = `repeat(4, ${w + 175}px)`;
+    artGallery.style.gridTemplateRows = `repeat(5, ${w + 175}px)`;
 }
 
 resizeBook();
+
+
 
 
 // OPEN FILTER FOR PHONE
@@ -142,3 +144,4 @@ const closeFilterBlockMbl = () => {
         html.style.overflow = 'auto';
     }, 500)
 }
+

@@ -393,7 +393,7 @@
 }
 .slider{
 	width: 70%;
-	height: 400px;
+	height: 500px;
 	overflow: hidden;
 }
 .slides{
@@ -425,7 +425,7 @@
 	height: 100%;
 	position: absolute;
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	transition: 0.3s;
 }
@@ -459,6 +459,7 @@
 	color: #b5b5b5;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	text-align: center;
 }
 
 .arrow{
@@ -491,10 +492,10 @@
 	margin-bottom: 17px;
 }
 .arrow_prev{
-	left: 100px;
+	left: 75px;
 }
 .arrow_next{
-	right: 100px;
+	right: 75px;
 	transform: rotate(180deg);
 }
 .slider_button{
@@ -975,9 +976,9 @@ input:checked ~ label::before{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 12;
     overflow: auto;
-    padding: 50px 150px;
+    padding: 100px 150px 50px 150px;
     display: none;
     opacity: 0;
     align-items: flex-start;
@@ -1014,94 +1015,105 @@ input:checked ~ label::before{
 	background-color: #b69b66;
 }
 .art_outputBlock-img{
-	width: 270px;
-	height: 445px;
-	background-image: url(https://cdn.discordapp.com/attachments/648552378139934720/834691512305844254/IMG_20210422_102549_242.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	width: 311px;
+	display: flex;
 }
 .art_outputBlockContent{
-	width: 70%;
+	width: auto;
 	height: auto;
-	margin-left: 50px;
+	margin-left: 100px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 .art_outputBlockContent-description{
-	width: 100%;
+	width: auto;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	margin-bottom: 50px;
+	margin-right: 100px;
+	white-space: pre;
 }
 .art_outputBlockContent-title{
+	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    color: #B69B66;
-    text-align: left;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 45px;
+	color: #B69B66;
+	margin-bottom: 35px;
 }
 .art_outputBlockContent-description>p {
     color: #b5b5b5;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
+	font-style: normal;
+	font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .art_outputBlockContent-description>p>span {
     font-weight: 600;
 }
 .art_outputBlockContent-writings{
-	width: 100%;
+	width: auto;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin-bottom: 50px;
 }
 .art_outputBlockContent-writingsTitle{
 	font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    color: #B69B66;
-    text-align: left;
+	font-weight: bold;
+	font-size: 45px;
+	color: #B69B66;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 15px;
+	white-space: pre;
+	margin-bottom: 50px;
+}
+.art_outputBlockContent-writingsUl{
+	width: auto;
+	height: 435px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	overflow: auto;
+	padding-right: 15px;
+}
+.art_outputBlockContent-writingsUl::-webkit-scrollbar{
+	background: none;
+	width: 5px;
+}
+.art_outputBlockContent-writingsUl::-webkit-scrollbar-thumb{
+	border-radius: 25px;
 }
 .art_outputBlockContent-writingsLi{
 	list-style: inside;
-	margin-left: 10px;
-	color: #b5b5b5;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 10px;
+	color: #b5b5b5;
+	white-space: pre;
 }
 .art_outputBlockContent-button{
-	width: 97px;
-    height: 37px;
-    border: 2px solid #B69B66;
+	width: 180px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #b69b66;
+    text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: inherit;
+    background: none;
+    color: #b69b66;
+    cursor: pointer;
     transition: 0.3s;
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 23px;
-    text-align: center;
-    color: #B69B66;
-	cursor: pointer;
+	margin-top: 25px;
 }
 .art_outputBlockContent-button:hover{
 	color: #303030;
