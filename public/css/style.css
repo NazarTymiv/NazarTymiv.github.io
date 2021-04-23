@@ -417,6 +417,9 @@
 .slide:nth-child(2n){
 	cursor: inherit;
 }
+.slide:nth-child(2n) > .slide_bg{
+	background-position: bottom;
+}
 .slide:nth-child(2n):hover > .slide_bg{
 	transform: scale(1);
 }
