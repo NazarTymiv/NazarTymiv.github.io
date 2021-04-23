@@ -605,7 +605,7 @@
 }
 @media screen and (max-width: 500px){
     .dates_timelineBlockMbl{
-        width: 40%;
+        width: 50%;
     }
     .dates_content{
         padding: 50px 35px;
@@ -613,7 +613,7 @@
 }
 @media screen and (max-width: 400px){
     .dates_timelineBlockMbl{
-        width: 55%;
+        width: 60%;
     }
 }
 

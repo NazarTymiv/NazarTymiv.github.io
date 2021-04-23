@@ -1331,7 +1331,7 @@ input:checked ~ label::before{
 
 /* TIMELINE FOR MOBILE */
 .dates_timelineBlockMbl{
-	width: 30%;
+	width: 40%;
 	height: 100vh;
 	position: fixed;
 	background-color: #303030;
@@ -1426,5 +1426,5 @@ input:checked ~ label::before{
 	background-color: #b69b66;
 	position: absolute;
 	top: 50%;
-	left: -140%;
+	left: -50px;
 }
