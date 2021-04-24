@@ -1,6 +1,6 @@
-title,year,genre,language,pages,fYear,fGenre,fLanguage,fPages,linkPhoto
-Чорні крила,2016,Модернізм,Українська,192 ст.,year2016,modernism,ukrainian,pages100,https://cdn.discordapp.com/attachments/648552378139934720/834691512305844254/IMG_20210422_102549_242.jpg
-Вибрані твори,1973,Модернізм,Українська,456 ст.,year1973,modernism,ukrainian,pages400,https://cdn.discordapp.com/attachments/648552378139934720/834691512561434674/IMG_20210422_102547_376.jpg
-Муза на чорному коні,1989,Модернізм,Українська,846 ст.,year1989,modernism,ukrainian,pages500,https://cdn.discordapp.com/attachments/648552378139934720/834691512796708874/IMG_20210422_102545_878.jpg
-Новели,1985,Модернізм,Українська,199 ст.,year1985,modernism,ukrainian,pages100,https://cdn.discordapp.com/attachments/648552378139934720/834691513530843146/IMG_20210422_102542_662.jpg
-Химерний Яцків,2010,Модернізм,Українська,223 ст.,year2010,modernism,ukrainian,pages200,https://cdn.discordapp.com/attachments/648552378139934720/834691513233309706/IMG_20210422_102544_984.jpg
+title,year,genre,language,pages,fYear,fGenre,fLanguage,fPages,linkPhoto,indexOfBook
+Чорні крила,2016,Модернізм,Українська,192 ст.,year2016,modernism,ukrainian,pages100,https://cdn.discordapp.com/attachments/648552378139934720/834691512305844254/IMG_20210422_102549_242.jpg,0
+Вибрані твори,1973,Модернізм,Українська,456 ст.,year1973,modernism,ukrainian,pages400,https://cdn.discordapp.com/attachments/648552378139934720/834691512561434674/IMG_20210422_102547_376.jpg,1
+Муза на чорному коні,1989,Роман,Українська,846 ст.,year1989,romance,ukrainian,pages500,https://cdn.discordapp.com/attachments/648552378139934720/834691512796708874/IMG_20210422_102545_878.jpg,2
+Новели,1985,Новела,Українська,199 ст.,year1985,novel,ukrainian,pages100,https://cdn.discordapp.com/attachments/648552378139934720/834691513530843146/IMG_20210422_102542_662.jpg,3
+Химерний Яцків,2010,Катарсис,Українська,223 ст.,year2010,catharsis,ukrainian,pages200,https://cdn.discordapp.com/attachments/648552378139934720/834691513233309706/IMG_20210422_102544_984.jpg,4

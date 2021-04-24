@@ -1,6 +1,6 @@
 /* MEDIA FOR MAIN PAGE */
 @media screen and (max-width: 1410px){
-    .header, .main_block, .aboutWriter, .footer{
+    .header, .main_block, .aboutWriter{
         padding: 0 100px;
     }
     .sliderContainer{
@@ -27,7 +27,7 @@
     }
 }
 @media screen and (max-width: 1300px){
-    .header, .main_block, .aboutWriter, .footer{
+    .header, .main_block, .aboutWriter{
         padding: 0 50px;
     }
     .aboutWriter_more{
@@ -113,7 +113,7 @@
     }
 }
 @media screen and (max-width: 1024px){
-    .header, .main_block, .aboutWriter, .footer{
+    .header, .main_block, .aboutWriter{
         padding: 0 25px;
     }
     .aboutWriter_more{
@@ -240,7 +240,7 @@
     }
 }
 @media screen and (max-width: 700px) {
-    .header, .main_block, .aboutWriter, .footer{
+    .header, .main_block, .aboutWriter{
         padding: 0 25px;
     }
     .main_block {
@@ -467,7 +467,7 @@
     }
 }
 @media screen and (max-width: 400px) {
-    .header, .main_block, .aboutWriter, .footer, .dates{
+    .header, .main_block, .aboutWriter, .dates{
         padding: 0 20px;
     }
     .aboutWriter_more{
@@ -531,7 +531,7 @@
     }
 }
 @media screen and (max-width: 350px){
-    .header, .main_block, .aboutWriter, .footer, .dates{
+    .header, .main_block, .aboutWriter, .dates{
         padding: 0 10px;
     }
     .aboutWriter_more{
@@ -904,9 +904,6 @@
         margin-top: 25px;
     }
     .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         padding-top: 25px;
     }
 }
