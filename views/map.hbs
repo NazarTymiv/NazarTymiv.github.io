@@ -26,10 +26,16 @@
 
         </div>
         <div class="map map2">
-
+            {{#each map_2}}
+            <div class="mark" id={{name}} index={{index}} style="left: {{x}}px; top: {{y}}px;">
+                <img src="https://cdn.discordapp.com/attachments/750857418950443069/834678443143725056/IMG_20210422_093348_711.png"
+                    alt="pin" class="pin">
+                <p class="mark_title">{{name}}</p>
+            </div>
+            {{/each}}
         </div>
         <div class="map map3">
-            {{#each map_1}}
+            {{#each map_3}}
             <div class="mark" id={{name}} index={{index}} style="left: {{x}}px; top: {{y}}px;">
                 <img src="https://cdn.discordapp.com/attachments/750857418950443069/834678443143725056/IMG_20210422_093348_711.png"
                     alt="pin" class="pin">
@@ -39,12 +45,12 @@
         </div>
     </div>
     <div class="mark_outputBlock">
-        
+
     </div>
     <div class="mapContent_buttons">
         <div class="mapContent_buttons-button" number="0">ЛЬВІВ</div>
         <div class="mapContent_buttons-button activeButtonMap" number="1">ІВАНО-ФРАНКІВСЬК</div>
-        <div class="mapContent_buttons-button" number="2">ЛЕСІВКА</div>
+        <div class="mapContent_buttons-button" number="2">ЛИСЕЦЬ</div>
     </div>
 </div>
 

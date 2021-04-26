@@ -673,8 +673,8 @@
 }
 
 .map {
-    width: 1700px;
-    height: 2100px;
+    width: 2300px;
+    height: 1700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -690,11 +690,11 @@
 }
 
 .map2 {
-    background-image: url(../img/if-map.png);
+    background-image: url(../img/map_if.png);
 }
 
 .map3 {
-    background-image: url(../img/map.png);
+    background-image: url(../img/map_ls.png);
 }
 .mark {
 	width: 50px;
@@ -766,7 +766,10 @@
     background-color: rgba(38, 38, 38, 1);
 }
 .mark_outputBlock-img {
-    width: 404px;
+	height: 755px;
+    width: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .mark_outputBlockContent {
     width: auto;

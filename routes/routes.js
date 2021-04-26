@@ -2,9 +2,10 @@ const { Router } = require('express')
 const { marks, books} = require('../data/parser')
 const router = Router()
 
-const map_one = ['home', 'school']
-	map_two = []
-	map_thee = []
+const 
+    map_one = ['0', '1'],
+    map_two = ['2', '3', '4'],
+    map_three = ['5', '6']
 
 router.get('/', (req, res) => {
     res.render('index')
@@ -22,7 +23,9 @@ router.get('/art', (req, res) => {
 
 router.get('/map', (req, res) => {
     res.render('map', {
-    	map_1: marks.filter(mark => map_one.includes(mark.name))
+    	map_1: marks.filter(mark => map_one.includes(mark.index)),
+        map_2: marks.filter(mark => map_two.includes(mark.index)),
+        map_3: marks.filter(mark => map_three.includes(mark.index))
     })
 })
 

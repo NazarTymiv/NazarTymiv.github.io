@@ -30,22 +30,67 @@ const closePage = () => {
 
 const marksData = [
 	{
-		"name": "home",
-		"point": "Лисець",
-		"region": "Івано-Франківська",
-		"district": "yes",
-		"photo": "https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png",
-		"morePhotos": "https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png",
-		"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit."
+		name: 'school',
+		point: 'Лисець',
+		region: 'Івано-Франківська',
+		district: 'yes',
+		photo: 'https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png',
+		morePhotos: 'https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit.'
 	},
 	{
-		"name": "school",
-		"point": "Лесівка",
-		"region": "Івано-Франківська",
-		"district": "no",
-		"photo": "https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png",
-		"morePhotos": "https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png",
-		"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit."
+		name: 'school',
+		point: 'Лисець',
+		region: 'Івано-Франківська',
+		district: 'yes',
+		photo: 'https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png',
+		morePhotos: 'https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit.'
+	},
+	{
+		name: 'school',
+		point: 'Лисець',
+		region: 'Івано-Франківська',
+		district: 'yes',
+		photo: 'https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png',
+		morePhotos: 'https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit.'
+	},
+	{
+		name: 'school',
+		point: 'Лисець',
+		region: 'Івано-Франківська',
+		district: 'yes',
+		photo: 'https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png',
+		morePhotos: 'https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit.'
+	},
+	{
+		name: 'school',
+		point: 'Лисець',
+		region: 'Івано-Франківська',
+		district: 'yes',
+		photo: 'https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png',
+		morePhotos: 'https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit.'
+	},
+	{
+		name: 'school',
+		point: 'Лисець',
+		region: 'Івано-Франківська',
+		district: 'yes',
+		photo: 'https://i.pinimg.com/originals/ca/4c/4e/ca4c4e30608a538c1aafb5d918951990.png',
+		morePhotos: 'https://i.pinimg.com/originals/94/29/1f/94291f9fdca9af9ba1aefd9b104c8d94.png',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit.'
+	},
+	{
+		name: 'church',
+		point: 'Лисець',
+		region: 'Івано-Франківська',
+		district: 'no',
+		photo: '../img/church.jpg',
+		morePhotos: '../img/church2.jpg',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit sapiente, deleniti aut dolor facilis voluptatum error ipsam, at consequatur commodi tenetur! Accusamus illo neque et, obcaecati saepe nam architecto porro voluptate dicta explicabo quibusdam consectetur fugit sit molestiae earum velit eum! Repudiandae, reiciendis beatae, dolor autem totam, non dicta fugit iure temporibus aspernatur eligendi debitis id tempore sit! A quo laborum eligendi blanditiis ad illo rem ratione in! Adipisci cupiditate vel pariatur ullam libero corporis ab eum veniam velit.'
 
 	}
 ]
@@ -57,7 +102,7 @@ const marksDataParser = (mark) => {
 		<div class="aboutWriter_moreClose-line"></div>
 		<div class="aboutWriter_moreClose-line"></div>
 	</div>
-	<img class="mark_outputBlock-img" src="${data.photo}" alt="photo">
+	<div class="mark_outputBlock-img" style="background-image: url(${data.photo})"></div>
 	<div class="mark_outputBlockContent">
 		<div class="mark_outputBlockContent-col1">
 			<div class="mark_outputBlock-info">
