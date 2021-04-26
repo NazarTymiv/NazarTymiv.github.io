@@ -9,7 +9,6 @@
 	outline: none;
 	list-style: none;
 	text-decoration: none;
-	border: 1px solid #000;
 }
 ::-webkit-scrollbar {
     background-color: #262626;

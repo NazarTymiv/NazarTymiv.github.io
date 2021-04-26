@@ -1,5 +1,5 @@
 /* MEDIA FOR MAIN PAGE */
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1650px){
     .header, .main_block, .aboutWriter{
         padding: 0 100px;
     }
@@ -26,16 +26,15 @@
         min-width: 150px;
     }
     .mark_outputBlock {
-        padding: 50px 75px 25px 75px;
+        padding: 0 75px 25px 75px;
     }
     .mark_outputBlockContent,
-    .mark_outputBlock-img
-    {
+    .mark_outputBlock-img {
         transform: scale(0.8);
     }
     .mark_outputBlock-img {
         min-width: 30%;
-        height: 740px;
+        height: 730px;
     }
     .mark_outputBlockContent {
         min-width: 65%;
