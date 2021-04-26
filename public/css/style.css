@@ -662,34 +662,193 @@
 
 
 /* MAP */
-.mapContainer{
-	width: 100%;
-	height: 90vh;
-	overflow: hidden;
+.mapContainer {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
 }
-.mapContainer::-webkit-scrollbar{
+
+.mapContainer::-webkit-scrollbar {
     display: none;
 }
-.map{
-	width: 2000px;
-    height: 1500px;
+
+.map {
+    width: 1700px;
+    height: 2100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
-	display: none;
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.map1 {
+    background-image: url(../img/cat.jpg);
+}
+
+.map2 {
+    background-image: url(../img/if-map.png);
+}
+
+.map3 {
+    background-image: url(../img/map.png);
+}
+.mark {
+	width: 50px;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	cursor: pointer;
+}
+.mark_title {
 	opacity: 0;
-	transition: 0.5s;
+	transition: 0.3s;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;	
 }
-.map1{
-	background-image: url(../img/cat.jpg);
+.pin {
+	width: 50px;
+	transition: 0.3s;
 }
-.map2{
-	background-image: url(../img/main_photo.png);
+.pin:hover {
+	transform: scale(1.05);
+	filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.2));
+
 }
-.map3{
-	background-image: url(../img/pexels-photo-5703006.jpeg);
+.pin:hover ~ p{
+	opacity: 1;
+	font-size: 17px;
+	color: #b69b66;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.4), 0 0 1em rgba(0,0,0,0.4);
+}
+#home {
+	left: 1160px;
+	top: 415px;
+}
+#school {
+	left: 300px;
+	top: 400px;
+}
+.mark_outputBlock {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(48, 48, 48, 0.97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    overflow: auto;
+    padding: 100px 150px 50px 150px;
+    display: none;
+    opacity: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.3s;
+}
+.mark_outputBlock_CloseBtn  {
+	width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    cursor: pointer;
+    top: 50px;
+    right: 50px;
+    transition: 0.3s;
+    background-color: rgba(38, 38, 38, 1);
+}
+.mark_outputBlock-img {
+    width: 404px;
+}
+.mark_outputBlockContent {
+    width: auto;
+	height: auto;
+	margin-left: 100px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.mark_outputBlock-title {
+    font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: #B69B66;
+	margin-bottom: 35px;
+}
+.mark_outputBlock-info,
+.mark_outputBlock-moreImages {
+    width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-right: 100px;
+	white-space: pre;
+}
+
+.mark_outputBlock-info {
+    margin-bottom: 30px;
+}
+.mark_outputBlock-moreImages {
+    height: 500px;
+}
+.mark_outputBlock-description {
+    margin-left: -100px;
+    width: 450px;
+}
+.mark_outputBlock-info > p,
+.mark_outputBlock-description > p {
+    color: #b5b5b5;
+	font-style: normal;
+	font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+.mark_outputBlock-moreImages__img {
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.mark_outputBlock-moreImages__img-dim {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.mark_outputBlock-info > p > span {
+    font-weight: 600;
+}
+.mark_outputBlock-moreImages-line {
+    width: 30px;
+    height: 2.5px;
+    background-color: #b5b5b5;
+    position: absolute;
+    transition: 0.3s;
+}
+.mark_outputBlock-moreImages-line:nth-child(1) {
+    transform: rotate(90deg);
+}
+.mark_outputBlock-moreImages__img-dim:hover>.mark_outputBlock-moreImages-line {
+    background-color: #b69b66;
 }
 
 

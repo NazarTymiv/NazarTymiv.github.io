@@ -1,10 +1,13 @@
 const fs = require('fs')
 const csv = require('csv-parser')
+const path = require('path')
+const marks = require('./marks.json')
 
 books = []
 
-fs.createReadStream('data/books.csv')
+fs.createReadStream(path.resolve(__dirname, 'books.csv'))
     .pipe(csv())
     .on('data', data => (books.push(data)))
 
-module.exports = books
+exports.books = books
+exports.marks = marks
