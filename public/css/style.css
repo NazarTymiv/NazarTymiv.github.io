@@ -9,6 +9,7 @@
 	outline: none;
 	list-style: none;
 	text-decoration: none;
+	border: 1px solid #fff;
 }
 ::-webkit-scrollbar {
     background-color: #262626;
@@ -763,17 +764,17 @@
     right: 50px;
     transition: 0.3s;
     background-color: rgba(38, 38, 38, 1);
+	z-index: 15;
 }
 .mark_outputBlock-img {
-	height: 755px;
-    width: 500px;
+    width: 415px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .mark_outputBlockContent {
     width: 90%;
 	height: auto;
-	/* margin-left: 100px; */
+	margin-left: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;

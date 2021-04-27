@@ -99,12 +99,12 @@ const marksDataParser = (mark) => {
 	let data = marksData[mark.getAttribute('index')];
 	page.innerHTML = `
 	<div class="mark_outputBlock_CloseBtn">
-		<div class="aboutWriter_moreClose-line"></div>
-		<div class="aboutWriter_moreClose-line"></div>
+    	<div class="aboutWriter_moreClose-line"></div>
+    	<div class="aboutWriter_moreClose-line"></div>
 	</div>
-	<div class="mark_outputBlock-img" style="background-image: url(${data.photo})"></div>
+	<img src="${data.photo}" alt="photo" class="mark_outputBlock-img">
 	<div class="mark_outputBlockContent">
-		<div class="mark_outputBlockContent-col1">
+		<div class="mark_outputBlockContent_col1">
 			<div class="mark_outputBlock-info">
 				<h2 class="mark_outputBlock-title">Інформація</h2>
 				<p class="mark_outputBlock-info__point"><span>Пункт: </span>${data.point}</p>
@@ -114,22 +114,25 @@ const marksDataParser = (mark) => {
 			<div class="mark_outputBlock-moreImages">
 				<h2 class="mark_outputBlock-title">Більше зображень</h2>
 				<div class="mark_outputBlock-moreImages__img" style="background-image: url(${data.morePhotos})">
-					<a class="mark_outputBlock-moreImages__img-dim"href="https://www.google.com/search?q=%D0%9B%D0%B8%D1%81%D0%B5%D1%86%D1%8C%D0%BA%D0%B0+%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0&sxsrf=ALeKk027NQuXnHcoe5fN-DKkpMrzDAVb2g:1619347972841&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjShcGlnZnwAhWxlYsKHWC4CPcQ_AUoAnoECAIQBA&biw=1920&bih=979">
+					<a class="mark_outputBlock-moreImages__img-dim"
+						href="https://www.google.com/search?q=%D0%9B%D0%B8%D1%81%D0%B5%D1%86%D1%8C%D0%BA%D0%B0+%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0&sxsrf=ALeKk027NQuXnHcoe5fN-DKkpMrzDAVb2g:1619347972841&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjShcGlnZnwAhWxlYsKHWC4CPcQ_AUoAnoECAIQBA&biw=1920&bih=979">
 						<div class="mark_outputBlock-moreImages-line"></div>
 						<div class="mark_outputBlock-moreImages-line"></div>
 					</a>
 				</div>
 				<div class="mark_outputBlock-moreImages__img" style="background-image: url(${data.morePhotos})">
-					<a class="mark_outputBlock-moreImages__img-dim"href="https://www.google.com/search?q=%D0%9B%D0%B8%D1%81%D0%B5%D1%86%D1%8C%D0%BA%D0%B0+%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0&sxsrf=ALeKk027NQuXnHcoe5fN-DKkpMrzDAVb2g:1619347972841&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjShcGlnZnwAhWxlYsKHWC4CPcQ_AUoAnoECAIQBA&biw=1920&bih=979">
+					<a class="mark_outputBlock-moreImages__img-dim"
+						href="https://www.google.com/search?q=%D0%9B%D0%B8%D1%81%D0%B5%D1%86%D1%8C%D0%BA%D0%B0+%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0&sxsrf=ALeKk027NQuXnHcoe5fN-DKkpMrzDAVb2g:1619347972841&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjShcGlnZnwAhWxlYsKHWC4CPcQ_AUoAnoECAIQBA&biw=1920&bih=979">
 						<div class="mark_outputBlock-moreImages-line"></div>
-    					<div class="mark_outputBlock-moreImages-line"></div>
+						<div class="mark_outputBlock-moreImages-line"></div>
 					</a>
 				</div>
+			</div>
 		</div>
-	</div>
-	<div class="mark_outputBlock-description">
-		<h2 class="mark_outputBlock-title">Опис</h2>
-		<p class="mark_outputBlock-description-text">${data.text}</p>
+		<div class="mark_outputBlock-description">
+			<h2 class="mark_outputBlock-title">Опис</h2>
+			<p class="mark_outputBlock-description-text">${data.text}</p>
+		</div>
 	</div>
 	`
 	closePage()
