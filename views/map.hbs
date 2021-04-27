@@ -23,7 +23,13 @@
     </div>
     <div class="mapContainer">
         <div class="map map1">
-
+            {{#each map_1}}
+            <div class="mark" id={{name}} index={{index}} style="left: {{x}}px; top: {{y}}px;">
+                <img src="https://cdn.discordapp.com/attachments/750857418950443069/834678443143725056/IMG_20210422_093348_711.png"
+                    alt="pin" class="pin">
+                <p class="mark_title">{{name}}</p>
+            </div>
+            {{/each}}
         </div>
         <div class="map map2">
             {{#each map_2}}
@@ -49,7 +55,8 @@
     </div>
     <div class="mapContent_buttons">
         <div class="mapContent_buttons-button wow animate__animated animate__fadeInLeft" number="0">ЛЬВІВ</div>
-        <div class="mapContent_buttons-button wow animate__animated animate__fadeIn activeButtonMap" number="1">ІВАНО-ФРАНКІВСЬК</div>
+        <div class="mapContent_buttons-button wow animate__animated animate__fadeIn activeButtonMap" number="1">
+            ІВАНО-ФРАНКІВСЬК</div>
         <div class="mapContent_buttons-button wow animate__animated animate__fadeInRight" number="2">ЛИСЕЦЬ</div>
     </div>
 </div>

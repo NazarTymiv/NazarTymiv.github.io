@@ -956,7 +956,7 @@
         transform: scale(0.8);
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .mark_outputBlock,
     .mark_outputBlockContent {
         flex-direction: column;
@@ -1000,10 +1000,5 @@
     .mark_outputBlockContent_col1 {
         align-items: center;
     }
-    /* .mark_outputBlock-moreImages {
-        display: flex;
-        align-items: flex-start;
-
-    } */
 }
 
