@@ -488,7 +488,11 @@ let artGallery = document.querySelector('.art_galery'),
     w = art.offsetWidth;
 
 const resizeBook = () => {
-    artGallery.style.gridTemplateRows = `repeat(5, ${w + 150}px)`;
+    if(body.offsetWidth > 500){
+        artGallery.style.gridTemplateRows = `repeat(5, ${w + 150}px)`;
+    } else {
+        artGallery.style.gridTemplateRows = `repeat(5, ${w + 175}px)`;
+    }
 }
 
 resizeBook();
@@ -524,3 +528,8 @@ const closeFilterBlockMbl = () => {
     }, 500)
 }
 
+
+// FIX BUG IN SAFARI WITH HOVER
+document.querySelectorAll('.art').forEach(item => {
+    item.addEventListener('click', () => {})
+})
