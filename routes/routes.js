@@ -4,8 +4,8 @@ const router = Router()
 
 const 
     map_one = ['0', '1'],
-    map_two = ['2', '3', '4'],
-    map_three = ['5', '6']
+    map_two = ['2'],
+    map_three = ['3', '4']
 
 router.get('/', (req, res) => {
     res.render('index')
