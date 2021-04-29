@@ -919,6 +919,11 @@
 	.mark_outputBlock-moreImages {
 		margin-right: 30px;
 	}
+	.mark_outputBlock_CloseBtn {
+		top: 25px;
+		right: 25px;
+	}
+	
 }
 @media screen and (max-width: 1200px) {
 	.mark_outputBlock-img,
@@ -982,6 +987,13 @@
 	.mark_outputBlockContent_col1 {
 		align-items: flex-start;
 		padding: 0;
+	}
+	.mark_outputBlock_CloseBtn {
+		top: 15px;
+		transform: scale(0.8);
+	}
+	.mark_outputBlock-description {
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 500px) {
