@@ -759,9 +759,7 @@
 	z-index: 15;
 }
 .mark_outputBlock-img {
-	width: 405px;
-	background-position: center;
-	background-repeat: no-repeat;
+	width: 400px;
 }
 .mark_outputBlockContent {
 	width: 90%;
