@@ -1,5 +1,17 @@
 /* MEDIA FOR MAIN PAGE */
-
+@media screen and (min-width: 1600px) {
+	.slider{
+		height: 650px;
+	}
+	.aboutWriter{
+		grid-template-columns: 2fr 1fr;
+	}
+}
+@media screen and (min-width: 1500px) {
+	.aboutWriter{
+		grid-template-columns: 1.5fr 1fr;
+	}
+}
 @media screen and (max-width: 1410px) {
 	.header,
 	.main_block,
