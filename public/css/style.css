@@ -1219,27 +1219,6 @@ input:checked ~ label::before {
 	margin-bottom: 10px;
 	color: #b5b5b5;
 }
-.art_outputBlockContent-button {
-	width: 180px;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 2px solid #b69b66;
-	text-transform: uppercase;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 700;
-	font-size: inherit;
-	background: none;
-	color: #b69b66;
-	cursor: pointer;
-	transition: 0.3s;
-	margin-top: 25px;
-}
-.art_outputBlockContent-button:hover {
-	color: #303030;
-	background-color: #b69b66;
-}
 
 .art_filtersBtnMb {
 	width: 150px;

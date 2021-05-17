@@ -93,7 +93,6 @@ const dataForBooks = [
             "language": "Українська",
             "countOfPage": "192 ст."
         },
-        "linkForBuyBook": "https://www.yakaboo.ua/ua/chorni-krila-ta-inshi-tvori.html",
         "writings": [
             "«Гріх не все вийде наяву…»",
             "«Одна дівчина любила ліжко…»",
@@ -165,7 +164,6 @@ const dataForBooks = [
             "language": "Українська",
             "countOfPage": "456 ст."
         },
-        "linkForBuyBook": "https://retrokniga.com/allproduct/books/yatsk%D1%96v-mihaylo-vibran%D1%96-tvori",
         "writings": [
             "У наймах",
             "Собака",
@@ -224,7 +222,6 @@ const dataForBooks = [
             "language": "Українська",
             "countOfPage": "846 ст."
         },
-        "linkForBuyBook": "https://retrokniga.com/khudozhestvennaya-literatura/klassika/yack%D1%96v-mikhajjlo-muza-na-chornomu-kon%D1%96",
         "writings": [
             "У наймах",
             "Собака",
@@ -337,7 +334,6 @@ const dataForBooks = [
             "language": "Українська",
             "countOfPage": "199 ст."
         },
-        "linkForBuyBook": "https://crafta.ua/uk/lots/6537626193-yackiv-myu-noveli-biblioteka-karpati-lviv-kamenyar-1985-200sportret%20",
         "writings": [
             "У наймах",
             "Собака",
@@ -406,7 +402,6 @@ const dataForBooks = [
             "language": "Українська",
             "countOfPage": "223 ст."
         },
-        "linkForBuyBook": "https://www.yakaboo.ua/ua/himernij-jackiv-modernists-kij-diskurs-u-prozi-mihajla-jackova.html",
         "writings": [
             "Химерний Яцків : модерністський дискурс у прозі Михайла Яцкова",
             "Михайло Яцків. Архітвір. Вибрані тексти.",
@@ -453,7 +448,6 @@ const constructorOutputBlock = (index) => {
                 <p class="art_genre"><span>Жанр:</span> ${data.description.ganre}</p>
                 <p class="art_language"><span>Мова:</span> ${data.description.language}</p>
                 <p class="art_pages">${data.description.countOfPage}</p>
-                <a target="_blank" href="${data.linkForBuyBook}" class="art_outputBlockContent-button">Купити</a>
             </div>
             <div class="art_outputBlockContent-writings">
                 <h2 class="art_outputBlockContent-writingsTitle">Список творів</h2>
